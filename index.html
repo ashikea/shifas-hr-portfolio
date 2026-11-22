@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Shifas CS — HR Professional & People Operations | Thrissur, Kerala</title>
+    
+    <!-- Meta Descriptions & OpenGraph -->
+    <meta name="description" content="Portfolio of Shifas CS — HR Professional certified in HR Management (NSDC) and Digital HR Applications (GreytHR). Specializing in Talent Acquisition, Employee Onboarding, HR Operations, Advance Excel, and Power BI." />
+    <meta name="keywords" content="Shifas CS, HR Professional, Thrissur Kerala, HR Management, GreytHR, Talent Acquisition, People Operations, HRMS, Payroll Support" />
+    <meta name="author" content="Shifas CS" />
+    <meta name="theme-color" content="#8FA893" />
+    
+    <!-- Leaf Icon Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 C25 25 15 65 50 95 C85 65 75 25 50 5 Z' fill='%236B8E73'/><path d='M50 15 Q48 55 50 95' stroke='%23F4F7F5' stroke-width='3' fill='none'/><path d='M50 40 Q35 30 25 40' stroke='%23F4F7F5' stroke-width='2' fill='none'/><path d='M50 55 Q65 45 75 55' stroke='%23F4F7F5' stroke-width='2' fill='none'/><path d='M50 70 Q38 62 30 70' stroke='%23F4F7F5' stroke-width='2' fill='none'/></svg>" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit for crisp geometric typography & Amelia fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      /* 
+       * Amelia Typography Integration:
+       * When hosting a licensed Amelia font (Amelia.woff2 / Amelia.ttf),
+       * place the font file into /public/fonts/ and uncomment the @font-face block below.
+       * The fallback cascade blends 'Outfit' and 'Plus Jakarta Sans' for identical organic geometric elegance.
+       */
+      @font-face {
+        font-family: 'Amelia';
+        src: local('Amelia'), local('Amelia-Regular'),
+             url('/fonts/Amelia.woff2') format('woff2'),
+             url('/fonts/Amelia.woff') format('woff');
+        font-weight: 400 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Baseline smooth scrolling and zero horizontal shift */
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Custom scrollbar matching sage botanical tones */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F4F7F5;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #101713;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8FA893;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6B8E73;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4A634E;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #7D9B82;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#FFFFFF] via-[#F4F7F5] to-[#E8EFEA] text-stone-800 dark:from-[#101713] dark:via-[#0F1612] dark:to-[#0B110E] dark:text-stone-100 transition-colors duration-500 min-h-screen font-sans selection:bg-sage-400/40 selection:text-sage-900 dark:selection:text-sage-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
