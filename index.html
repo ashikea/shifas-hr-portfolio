@@ -71,6 +71,29 @@
   </head>
   <body class="bg-gradient-to-b from-[#FFFFFF] via-[#F4F7F5] to-[#E8EFEA] text-stone-800 dark:from-[#101713] dark:via-[#0F1612] dark:to-[#0B110E] dark:text-stone-100 transition-colors duration-500 min-h-screen font-sans selection:bg-sage-400/40 selection:text-sage-900 dark:selection:text-sage-100">
     <div id="root"></div>
+
+    <!-- Production bundle fallback for GitHub Pages static branch deployment -->
+    <script>
+      (function() {
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+          // Preload CSS
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.crossOrigin = 'anonymous';
+          link.href = '/shifas-hr-portfolio/assets/index-C0c9NRBE.css';
+          document.head.appendChild(link);
+
+          // Load production JavaScript bundle
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.crossOrigin = 'anonymous';
+          script.src = '/shifas-hr-portfolio/assets/index-4S788bcb.js';
+          document.body.appendChild(script);
+        }
+      })();
+    </script>
+
+    <!-- Vite development entry point -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -68,13 +68,36 @@
         background: #7D9B82;
       }
     </style>
-    <script type="module" crossorigin src="/shifas-hr-portfolio/assets/index-DCekSsGu.js"></script>
+    <script type="module" crossorigin src="/shifas-hr-portfolio/assets/index-4S788bcb.js"></script>
     <link rel="modulepreload" crossorigin href="/shifas-hr-portfolio/assets/icons-DVYIU-Z8.js">
     <link rel="modulepreload" crossorigin href="/shifas-hr-portfolio/assets/react-BomS1FvJ.js">
     <link rel="modulepreload" crossorigin href="/shifas-hr-portfolio/assets/three-BAWuiX6T.js">
-    <link rel="stylesheet" crossorigin href="/shifas-hr-portfolio/assets/index-DA0fw0M5.css">
+    <link rel="stylesheet" crossorigin href="/shifas-hr-portfolio/assets/index-C0c9NRBE.css">
   </head>
   <body class="bg-gradient-to-b from-[#FFFFFF] via-[#F4F7F5] to-[#E8EFEA] text-stone-800 dark:from-[#101713] dark:via-[#0F1612] dark:to-[#0B110E] dark:text-stone-100 transition-colors duration-500 min-h-screen font-sans selection:bg-sage-400/40 selection:text-sage-900 dark:selection:text-sage-100">
     <div id="root"></div>
+
+    <!-- Production bundle fallback for GitHub Pages static branch deployment -->
+    <script>
+      (function() {
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+          // Preload CSS
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.crossOrigin = 'anonymous';
+          link.href = '/shifas-hr-portfolio/assets/index-C0c9NRBE.css';
+          document.head.appendChild(link);
+
+          // Load production JavaScript bundle
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.crossOrigin = 'anonymous';
+          script.src = '/shifas-hr-portfolio/assets/index-4S788bcb.js';
+          document.body.appendChild(script);
+        }
+      })();
+    </script>
+
+    <!-- Vite development entry point -->
   </body>
 </html>
