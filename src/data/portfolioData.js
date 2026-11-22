@@ -1,5 +1,5 @@
 // Default profile photo path (can be replaced by external URL or custom upload)
-export const DEFAULT_PROFILE_PHOTO_URL = "./images/shifas-profile.jpg";
+export const DEFAULT_PROFILE_PHOTO_URL = `${import.meta.env.BASE_URL}images/shifas-profile.jpg`;
 
 export const portfolioData = {
   personal: {
